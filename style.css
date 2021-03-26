@@ -182,7 +182,7 @@ body {
 /* --------- <LOGO-BOX>--------- */
 .wrapper_logo {
     width: 100%;
-    background: url(../img/bg/logo_bg.png) center no-repeat;
+    background: url(./img/bg/logo_bg.png) center no-repeat;
     background-size: cover;
 }
 
@@ -308,7 +308,7 @@ body {
 .catalog {
     width: 45%;
     height: 600px;
-    background: url(../img/bg/new-collection_bg.png);
+    background: url(./img/bg/new-collection_bg.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -430,7 +430,7 @@ body {
 .collection_img {
     width: 45%;
     height: 600px;
-    background: url(../img/bg/old-collection_bg.png) center center;
+    background: url(./img/bg/old-collection_bg.png) center center;
     background-size: cover;
 }
 
@@ -602,7 +602,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/bg/footer_bg.png);
+    background: url(./img/bg/footer_bg.png);
     background-size: cover;
 }
 
