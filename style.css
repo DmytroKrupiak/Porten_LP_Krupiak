@@ -322,8 +322,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    position: relative;
+    
 }
+
+
 
 .watch {
     display: flex;
@@ -355,6 +358,10 @@ body {
     line-height: 24px;
     color: #FFFFFF;
     margin-top: 20px;
+    text-align: left;
+    position: relative;
+    left:-15%;
+   
 }
 
 .watch_item_price {
@@ -365,7 +372,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #D0D0D0;
-    text-align: center;
+    
 }
 
 .new_collection {
@@ -602,7 +609,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./img/bg/footer_bg.png);
+    background: url(./img/bg/footer_bg.png) center no-repeat;
     background-size: cover;
 }
 
@@ -860,7 +867,7 @@ body {
 /* --------- </FOOTER>--------- */
 
 
-    @media(max-width:1025px) {
+    @media(max-width:1050px) {
         .add_info_container {
             flex-direction: column;
             align-items: start;
@@ -869,6 +876,10 @@ body {
         .about_box {
             height: 240px;
             padding-right: 0px;
+        }
+
+        .brands_logo a {
+            margin:50px;
         }
 
         .subscribe {
@@ -880,6 +891,10 @@ body {
             margin-top: 30px;
         }
 
+        .collection_description {
+            font-size: 14px;
+        }
+
     }
 
 
@@ -887,8 +902,24 @@ body {
 
     .carousel {
         display: block;
-        position:relative;
+        position: relative;
     }
+
+    .watch_item_container {
+      width: auto;
+    }
+
+    .watch_item_name {
+        text-align: center;
+        left:0;
+    }
+
+
+     .new_assortment_container {
+         width:100%;
+     }
+
+
 
     .watch_item {
         display: none;
@@ -898,14 +929,13 @@ body {
         display: none;
     }
 
-
-     .watch_wrapper {
-         flex-wrap: wrap-reverse;
-     }
-
      .new_collection_title {
          font-size: 30px;
      }
+
+     .brands_logo a {
+        margin:15px;
+    }
  }
 
 @media(max-width:1270px) {
@@ -923,7 +953,8 @@ body {
     }
 
     .collection_img {
-        width: 100%;
+        min-width: 100%;
+        height: 500px;
     }
 
     .collection_content {
@@ -1079,9 +1110,7 @@ body {
         height: 500px;
     }
 
-    .collection_box {
-        padding: 0 25px;
-    }
+   
 
     .collection_title {
         font-size: 30px;
@@ -1105,13 +1134,7 @@ body {
         height: 520px;
     }
 
-    .collection_img {
-        display: none;
-    }
-
  
-
-
     .new_assortment {
         padding: 0px;
     }
@@ -1122,15 +1145,18 @@ body {
 
     .add_info {
         padding-top: 10px;
-       padding-bottom: 15px;
+        padding-bottom: 15px;
     }
 
-    .about_box {
-        display: none;
+    .about_box h2{
+        text-align: center;
+        margin-top: 10px;
     }
 
     .add_info_container {
         align-items: center;
+        height: 720px;
+       
     }
 
     .categories {
@@ -1142,10 +1168,7 @@ body {
         text-align: center;
     }
 
-    .subscribe_text {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+   
 }
 
 
@@ -1170,20 +1193,25 @@ body {
         padding-left: 10px;
         padding-right: 10px;
         text-align: center;
-
     } 
+
+      .subscribe_text {
+         font-size: 12px;
+      }
+    
+      .subscribe_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
      .subscribe_input {
         padding-left: 0px;
         text-align: center;
     }
 
-    .subscribe_text {
-        display: none;
-    }
 
-    .subscribe_box {
-        flex-direction: column;
-    }
+
+
 
     .subscribe_btn {
         margin-top: 10px;
@@ -1210,8 +1238,6 @@ body {
     .catalog {
         height: 400px;
     }
-
-
 
     .new_collection_title {
         font-size: 25px;
@@ -1255,12 +1281,23 @@ body {
         padding-top: 80px;
     }
 
+    .collection_description {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
     .collection_btn {
         width: 240px;
+        margin-bottom: 30px;
+    }
+
+    .collection_title {
+        margin-top: 30px;
     }
 
     .categories_title {
         font-size: 22px;
+        
     }
 
     .subscribe_title {
@@ -1314,15 +1351,17 @@ body {
         margin-top: 10px;
     }
 
-    .collection_description {
-        margin-top: 15px;
-    }
+
 
     .categories {
         align-items: center;
         padding-right: 10px;
         padding-left: 10px;
         margin-top: 0px;
+    }
+
+    .new_assortment_title {
+        font-size: 32px;
     }
 
     .categories_box_item_5 {
@@ -1336,7 +1375,8 @@ body {
     }
 
     .about_box {
-        display: none;
+       font-size: 12px;
+       padding: 0 10px;
     }
 
     .add_info {
