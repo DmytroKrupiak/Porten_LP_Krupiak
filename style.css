@@ -905,6 +905,8 @@ body {
         position: relative;
     }
 
+
+
     .watch_item_container {
       width: auto;
     }
@@ -987,6 +989,11 @@ body {
           padding-right: 30px;
           padding-left: 30px;
       }
+
+      .collection_description {
+          padding-right: 12px;
+          padding-left: 12px;
+      }
 }
 
 
@@ -1016,7 +1023,7 @@ body {
         left:85%;
         width: 30px;
         height: 20px;
-        z-index: 3;
+        z-index: 2;
     }
 
     .nav_burger span {
@@ -1168,6 +1175,8 @@ body {
         text-align: center;
     }
 
+ 
+
    
 }
 
@@ -1210,11 +1219,8 @@ body {
     }
 
 
-
-
-
     .subscribe_btn {
-        margin-top: 10px;
+        width:210px;
     }
 
     .footer_container {
